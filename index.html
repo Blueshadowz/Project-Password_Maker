@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Maker</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Générateur de mot de passe</h1>
+        <div class="option">
+            <p>Sélectionnez les options de votre mot de passe sécurisé:</p>
+            <label for="numbers"><input type="checkbox" name="numbers" id="numbers"> Avec des chiffres [ 0 1 2 3 4 5 6 7
+                8
+                9
+                ]</label>
+            <label for="lowercase"><input type="checkbox" name="lowercase" id="lowercase"> Avec des lettres
+                minuscules [ a b c ... x y z ]</label>
+            <label for="uppercase"><input type="checkbox" name="uppercase" id="uppercase">Avec des lettres majuscules
+                [
+                A B C ... X Y Z ]</label>
+            <label for="symbols"><input type="checkbox" name="symbols" id="symbols">Avec des caractères spéciaux [ ~ ! @
+                #
+                $ % ^ & * ( ) - _ = + [ ] { } ; : , . <> / ? | ]</label>
+            <label for="length"><select name="length" id="length">
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12" selected>12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                </select></label>
+            <button id="btnSubmit">Générer un mot de passe</button>
+        </div>
+        <p id="result"></p>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
